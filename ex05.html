@@ -4,14 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .blue16,.blue16>li>a{
+            font-size:16px;
+            color:blue;
+        }
+        #menu,#menu>li>a{
+            font-size:16px;
+            color:green;
+        }
+        a,nav{
+            font-size:20px;
+            color:red;
+        }
+        
+        #main-title{
+            color:gold;
+        }
+        .main-title{
+            color:silver;
+        }
+        h1{
+            color:brown;
+        }
+    </style>
 </head>
 <body>
-    <h1>메뉴</h1>
+    <h1 id="main-title" class="main-title">메뉴</h1>
     <nav>
         <ul>
             <li>
                 <a href="#">메뉴</a>
-                <ul>
+                <ul id="menu">
                     <li><a href="#">김치찌개</a></li>
                     <li><a href="#">된장찌개</a></li>
                     <li><a href="#">청국장</a></li>
@@ -20,9 +44,21 @@
             </li>
             <li>
                 <a href="#">소식</a>
+                <ul id="news" class="blue16">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">QNA</a></li>
+                    <li><a href="#">Event</a></li>
+                </ul>
             </li>
             <li>
                 <a href="#">회사</a>
+                <ul id="company" class="blue16">
+                    <li><a href="#">대표인사말</a></li>
+                    <li><a href="#">연혁</a></li>
+                    <li><a href="#">오시는길</a></li>
+                    <li><a href="#">조직도</a></li>
+                </ul>
             </li>
         </ul>
     </nav>
