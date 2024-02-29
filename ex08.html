@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{font-size:50px;}/*모든 선택자*/
+        p{color:red;}/*타입선택자*/
+        #p{color:green;}/*아이디선택자*/
+        .p{color:blue;}/*클래스선택자*/
+        li li{color:yellow;}/*하위(자손)선택자*/
+        .unorder-list>li{color:cyan;}/*자식선택자*/
+        .unorder-list+p{color:magenta;}/*밑에동생선택자*/
+        .unorder-list~a{color:gray;}/*동생들선택자*/
+        p,a{font-size:10px;}/*그룹선택자*/
+        [title]{font-weight:900;}/*속성선택자*/
+        /* .p,.unorder-list{background-color:gold;} */
+        /* #p+p,.p+ul{background-color:gold;} */
+        [class]{background-color:gold;}
+        [href]{font-size:40px;}
+        a[href*="https"]{color:red;}
+    </style>
+</head>
+<body>
+    <p title="타입선택자">Type Selector</p>
+    <a href="./ex04.html" target="_blank">링크0</a>
+    <p id="p" title="아이디선택자">ID Selector</p>
+    <p class="p" title="클래스선택자">Class Selector</p>
+    <ul class="unorder-list">
+        <li>
+            item01
+            <ul>
+                <li>item02</li>
+            </ul>
+        </li>
+    </ul>
+    <p>파라미터04</p>
+    <p>파라미터05</p>
+    <a href="https://www.google.com">링크1</a>
+    <a href="https://www.daum.net">링크2</a>
+</body>
+</html>
