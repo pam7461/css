@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상클래스선택자</title>
+    <style>
+        /* child 연속된 동일 엘리먼트 */
+        li:nth-child(4){color:red;}
+        li:first-child{color:green;}
+        li:last-child{color:blue;}
+
+        /* of-type 불연속적인 동일 엘리먼트 */
+        p:nth-of-type(4){color:magenta;}
+        p:first-of-type{color:gold;}
+        p:last-of-type{color:silver;}
+
+
+        li:not(li:nth-child(4)){font-size:2em;}
+        p:not(.hidden){font-size:3em;}
+
+        div{
+            width:100px;
+            height:100px;
+            border:2px solid red;
+        }
+        div:empty{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>0</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+
+    <h2 id="sub-tit01">배고파</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p class="hidden">Lorem ipsum dolor sit amet consectetur.</p>
+    <p>Lorem ipsum dolor sit.</p>
+    <h3 id="sub-tit02">점심</h3>
+    <p>Lorem, ipsum.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae laborum voluptates accusantium laboriosam quibusdam rem, perspiciatis eius minima doloribus reprehenderit soluta vitae culpa quaerat ut dolore perferendis sapiente explicabo non.</p>
+
+    <div></div>
+    <div><a href="#">123</a></div>
+
+</body>
+</html>
