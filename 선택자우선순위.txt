@@ -1,0 +1,44 @@
+선택자 우선순위
+1. !important
+2. 인라인스타일
+3. #
+4. .
+5. Type(Tag)
+6. *
+
+우선순위가 같을경우
+마지막에 나온 선택자, 자세히
+
+
+
+
+.
+,
+>
+공백
+nth-child
+nth-of-type
+#
+type
+:hover
+::placeholder
+::before
+::after
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

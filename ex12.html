@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,td{
+            border:1px solid black;
+            border-collapse:collapse;
+        }
+        
+        .tmp{
+            width:100px;
+        }
+        td:nth-child(3){
+            width:200px;
+        }
+        td:last-child{
+            width:50px;
+        }
+        .name::before{
+            content:'고 ';
+        }
+        .name::after{
+            content:'님';
+        }
+        
+        
+        
+        .par::before,.par::after{
+            content:'';            
+        }
+        .child,.par::before,.par::after{
+            width:100px;
+            height:10px;
+            background-color:black;
+            margin-bottom:10px;
+            display:inline-block;
+        }
+        .par:hover>*,.par:hover::after,.par:hover::before{
+            background-color:red;
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="tmp">일련번호</td>
+            <td class="tmp">성명</td>
+            <td>전화번호</td>
+            <td>비고</td>
+        </tr>
+        <tr>
+            <td class="tmp">1</td>
+            <td class="tmp name">홍길동</td>
+            <td>010-1111-1111</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="tmp">2</td>
+            <td class="tmp name">이몽룡</td>
+            <td>010-2222-2222</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="tmp">3</td>
+            <td class="tmp name">성춘향</td>
+            <td>010-3333-3333</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="tmp">4</td>
+            <td class="tmp name">월매</td>
+            <td>010-4444-4444</td>
+            <td></td>
+        </tr>
+    </table>
+      
+    <div class="par">
+        <!-- ---------BOX=100*100 green--------- -->        
+        <div class="child"></div>        
+        <!-- ---------BOX=100*100 blue--------- -->
+    </div>
+</body>
+</html>
