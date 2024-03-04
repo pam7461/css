@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        span{
+            display:block;
+            width:500px;
+            background-color:red;
+            font-size:30px;
+            color:white;
+        }
+        div{
+            display:inline;
+            width:500px;
+            background-color:green;
+            font-size:30px;
+            color:white;
+        }
+        li{
+            display:inline-block;
+            width:200px;
+            height:200px;
+        }
+        li:first-child{
+            background-color:aquamarine;
+        }
+        li:nth-child(2){
+            background-color:hotpink;
+            display:none;
+        }
+        li:last-child{
+            background-color:darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+    <div>일</div><div>이</div><div>삼</div><div>사</div><div>오</div>
+
+    <ul>
+        <li>item01</li>
+        <li>item02</li>
+        <li>item03</li>
+    </ul>
+</body>
+</html>
