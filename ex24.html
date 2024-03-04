@@ -5,29 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        :root{
+            font-weight:900;
+            color:#222;
+        }
         nav{
             width:1200px;
             margin-left:auto;
             margin-right:auto;
-            background-color:rgba(0,0,0,0.2);
         }
         span{
             display:inline-block;
             width:200px;
             font-size:24px;
             text-align:center;
+            text-transform:capitalize;
+        }
+        span span{
+            display:inline;
+            text-transform:uppercase;
         }
 
 
 
-        span:nth-child(1){
-            background-color:red;
-        }
+        
     </style>
 </head>
 <body>
     <nav>
-        <span>menu</span><span>hollys mall</span><span>membership</span><span>hollys news</span><span>store</span><span>hollys is</span>
+        <span>menu</span><span><span>hollys</span> mall</span><span>membership</span><span><span>hollys</span> news</span><span>store</span><span><span>hollys</span> is</span>
     </nav>
 </body>
 </html>
