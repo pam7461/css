@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+        .box{
+            display:inline-block;
+            width:200px;
+            height:200px;
+            margin:20px auto;
+            border:1px solid black;
+        }
+        .box01{
+            border:50px solid transparent;
+            border-radius:100px;
+            border-image: url(./images/flowers.jpg) 50 repeat;
+        }
+        .box02{
+            border-color:red;
+            color:red;
+            border-top-left-radius:100px;
+        }
+        .box03{
+            border-color:green;
+            color:green;
+            border-top-right-radius:200px;
+        }
+        .box04{
+            border-color:blue;
+            color:blue;
+            border-bottom-left-radius:200px;
+            border-top-right-radius:200px;
+        }
+        .box05{
+            border-color:magenta;
+            color:magenta;
+            border:100px solid transparent;
+            border-left-color:magenta;
+        }
+        .box06{
+            outline-offset:0;
+            outline-width:10px;
+            outline-style:dotted;
+            outline-color:yellow;
+        }
+        .box07{
+            margin-bottom:500px;
+            box-shadow:
+                0px -2px 4px red inset,
+                2px 0px 4px green inset,
+                0px 2px 4px blue inset,
+                -2px 0px 4px magenta inset
+            ;
+
+            font-size:30px;
+            font-weight:900;
+            text-shadow:
+                1px 1px 0 #ff0000,
+                2px 2px 0 #fe0000,
+                3px 3px 0 #fd0000,
+                4px 4px 0 #fc0000,
+                5px 5px 0 #fb0000,
+                6px 6px 0 #fa0000
+            ;
+        }
+
+        .box08{
+            resize:both;
+            overflow:hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box01">box01</div>
+    <div class="box box02">box02</div>
+    <div class="box box03">box03</div>
+    <div class="box box04">box04</div>
+    <div class="box box05">box05</div>
+    <div class="box box06">box06</div>
+    <div class="box box07">box07</div>
+    <div class="box box08">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut nesciunt autem reprehenderit repudiandae hic inventore, quam cumque ut! Eius ipsam iste, error nemo minus odit voluptates excepturi veniam! Consequatur, temporibus.
+        Non exercitationem, velit tempore voluptates enim eos dicta mollitia distinctio magnam, rem iusto? Ipsa eligendi autem illum qui. Suscipit et ea quam amet veniam fugiat ab saepe perferendis odio voluptas.
+        Totam, magnam eum consequuntur dolore praesentium nulla sapiente nesciunt odio nihil, velit laboriosam, deserunt repudiandae blanditiis animi distinctio aut unde impedit. Sit molestiae, facere asperiores et cupiditate maxime dolor quaerat.
+        Nesciunt, voluptates dolore commodi, culpa mollitia repudiandae labore, quisquam iste id placeat impedit incidunt vero ipsam expedita ea eius? Consectetur nemo dolore illum dolores? Pariatur fuga earum mollitia sint aliquam.
+        Asperiores repellendus inventore, aspernatur quisquam, provident, esse amet architecto iure animi similique vero tempora hic voluptate sunt voluptas harum quae sed consequuntur rem. Sint, iure magnam sapiente qui harum repudiandae!
+        Voluptate officia, quisquam assumenda, facilis dolor, alias rerum consequatur delectus sunt esse laudantium tenetur dolore fugiat quae sint excepturi omnis accusantium hic dicta architecto consequuntur eligendi. Repellendus a cupiditate at.
+        Expedita consectetur magnam natus nemo facere, neque exercitationem minus pariatur debitis quis, aperiam vero repudiandae tempore iure mollitia est? Illo impedit eveniet saepe accusantium eaque modi quasi perspiciatis recusandae quos?
+        Quisquam iste repellat neque adipisci eveniet, nostrum, itaque amet laudantium unde dolore ab voluptatibus sit quos dolorem dolorum voluptatum alias omnis optio? Earum veritatis error a vero, cupiditate dolorum esse.
+        Ipsam minima maiores necessitatibus deleniti excepturi eligendi facere, voluptatum officia quam, dignissimos ut. Earum, placeat! Expedita libero, aut illo labore vitae nobis incidunt quaerat, debitis suscipit temporibus fugiat quibusdam tempora?
+        Cum aspernatur quisquam ex dolor soluta ducimus, voluptates natus totam nam? Nesciunt quasi maiores quo consequuntur suscipit sint eos, ullam alias quisquam quos! Sint maxime accusantium fuga doloremque voluptatum veniam!
+    </div>
+</body>
+</html>
