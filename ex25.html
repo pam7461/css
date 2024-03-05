@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            /* 구조 */
+            display:inline-block;
+
+            /* 박스모델 */
+            width:100px;
+            height:100px;
+            background-color:red;
+
+            /* 폰트/택스트 */
+            line-height:100px;
+            text-align:center;
+            text-transform:uppercase;
+        }
+        .box01{
+            opacity:0;
+        }
+        .box02{
+            display:none;
+            background-color:green;
+        }
+        .box03{
+            visibility:hidden;
+            background-color:blue;
+        }
+        .box04{
+            background-color:cyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box01">red</div>
+    <div class="box box02">green</div>
+    <div class="box box03">blue</div>
+    <div class="box box04">cyan</div>
+</body>
+</html>
