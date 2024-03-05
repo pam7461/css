@@ -5,14 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            margin:0;
+            padding:0;
+        }
         .box{
             /* 박스모델 */
             width:500px;
             height:500px;
+            /* margin-top:100px; */
+            /* margin-right:auto; */
+            /* margin-bottom:100px; */
+            /* margin-left:auto; */
+            /* margin:100px auto 100px auto; */
+            margin:100px auto;
+            
+            border-top-width:10px;
+            border-top-style:solid;
+            border-top-color:black;
+            border-top:10px solid black;
+
+            border-right-width:10px;
+            border-right-style:dotted;
+            border-right-color:red;
+            border-right:10px dotted red;
+
+
+            border-bottom-width:10px;
+            border-bottom-style:double;
+            border-bottom-color:green;
+            border-bottom:10px double green;
+
+            border-left-width:10px;
+            border-left-style:dashed;
+            border-left-color:blue;
+            border-left:10px dashed blue;
+
+            border-width:20px;
+            border-style:solid;
+            border-color:black;
+
+            border:10px dashed cyan;
+            border-bottom:none;
+            border-left:none;
         }
     </style>
 </head>
 <body>
+    <h1>제목</h1>
     <div class="box"></div>
 </body>
 </html>
