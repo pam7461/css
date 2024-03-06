@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* CSS Reset */
+        *{box-sizing:border-box;margin:0;padding:0;}
+
+
+        /* Set */
+        .clearfix::after{
+            content:'';
+            display:block;
+            clear:both;
+        }
+        .f-left{float:left;}
+        .f-right{float:right;}
+
+
+        /* 문서,사이트 Style */
         .par-box{
             width:600px;
             margin:0 auto;
@@ -17,13 +32,16 @@
         }
         .box:first-child{float:left;}
         .box:last-child{float:right;}
+        
     </style>
 </head>
 <body>
-    <div class="par-box">
-        <div class="box"></div>
-        <div class="box"></div>
+    <div class="par-box clearfix">
+        <div class="box f-left"></div>
+        <div class="box f-right"></div>    
     </div>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quae optio odit magni perferendis quaerat nesciunt eius fugit quam recusandae sed soluta est totam maiores placeat incidunt doloremque, molestias officiis!
+
+    
 </body>
 </html>
