@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing:border-box;margin:0;padding:0;}
+        .par-box{
+            width:600px;
+            height:100px;
+            margin:0 auto;
+            border:2px solid red;
+        }
+        .box{            
+            width:100px;
+            height:100%;
+            border:2px solid green;
+        }
+        .box01{float:left;width:200px;}
+        .box02{float:right;}
+
+
+
+
+        .f-left{float:left;}
+        .f-right{float:right;}
+        .wrap>.f-right{width:50%;}
+    </style>
+</head>
+<body>
+    <div class="par-box">
+        <div class="box box01">박스1</div>
+        <div class="box box02">박스2</div>
+    </div>
+
+    <div class="wrap">
+        <div class="f-right">
+            <div class="f-right">1</div>
+            <div class="f-left">2</div>
+        </div>
+        <div class="f-left">3</div>
+    </div>
+</body>
+</html>
