@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing:border-box;margin:0;padding:0;}
+        .clearfix::after{
+            content:'';
+            display:block;
+            clear:both;
+        }
+        .aside{
+            float:left;
+            width:30%;            
+            padding:16px;
+        }
+        .main{
+            float:left;
+            width:70%;            
+            border-left:1px solid black;
+            padding:16px;
+        }
+        .header{
+            border-bottom:2px solid #bb0000;
+            padding:20px;
+            text-align:center;            
+        }
+        
+        .footer{            
+            padding:1em;
+            background-color:#ccc;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">HEADER</header>
+    <div class="clearfix">
+        <aside class="aside">ASIDE</aside>
+        <main class="main">
+            <section class="sec sec01">SECTION01</section>
+            <section class="sec sec02">SECTION02</section>
+            <section class="sec sec03">SECTION03</section>
+        </main>
+    </div>
+    <footer class="footer">FOOTER</footer>
+</body>
+</html>
