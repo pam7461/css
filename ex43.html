@@ -11,7 +11,7 @@
             height:500px;            
             margin:100px auto;
             border:1px solid black;
-            position:fixed;
+            position:relative;
         }
         .box{
             width:100px;
@@ -43,11 +43,22 @@
             right:0;
             bottom:0;
         }
+        .child-box{
+            width:20px;
+            height:20px;
+            background:black;
+
+            position:absolute;
+            left:10px;
+            bottom:10px;
+        }
     </style>
 </head>
 <body>
     <div class="par-box">
-        <div class="box box01">1</div>
+        <div class="box box01">
+            <div class="child-box">일</div>
+        </div>
         <div class="box box02">2</div>
         <div class="box box03">3</div>
         <div class="box box04">4</div>

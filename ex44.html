@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;margin: 0;padding: 0;}
+        .box{
+            font-weight:900;
+            font-size:100px;
+            text-align:center;
+            position:fixed;
+            left:100px;
+            right:100px;
+            top:100px;
+            bottom:100px;
+        }
+        .box01{
+            background:red;
+            z-index:1;
+        }
+        .box02{
+            background:green;
+            left:200px;
+            top:200px;
+            z-index:999;
+        }
+        .box03{
+            background:blue;
+            left:300px;
+            top:300px;
+            z-index:0;
+        }
+        .box04{
+            background:cyan;
+            left:400px;
+            top:400px;
+            z-index:999;
+        }
+        .box05{
+            background:magenta;
+            left:500px;
+            top:500px;
+            z-index:1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box01">1</div>
+    <div class="box box02">2</div>
+    <div class="box box03">3</div>
+    <div class="box box04">4</div>
+    <div class="box box05">5</div>
+</body>
+</html>
