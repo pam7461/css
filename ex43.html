@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing:border-box;margin: 0;padding: 0;}
+        .par-box{
+            width:500px;
+            height:500px;            
+            margin:100px auto;
+            border:1px solid black;
+            position:fixed;
+        }
+        .box{
+            width:100px;
+            height:100px;
+            position:absolute;
+        }
+        .box01{
+            background:red;
+            left:200px;
+            top:200px;
+        }
+        .box02{
+            background:green;
+            right:0;
+            top:0;
+        }
+        .box03{
+            background:blue;
+            left:0;
+            bottom:0;
+        }
+        .box04{
+            background:aqua;
+            left:0;
+            top:0;
+        }
+        .box05{
+            background:dodgerblue;
+            right:0;
+            bottom:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="par-box">
+        <div class="box box01">1</div>
+        <div class="box box02">2</div>
+        <div class="box box03">3</div>
+        <div class="box box04">4</div>
+        <div class="box box05">5</div>
+    </div>
+</body>
+</html>

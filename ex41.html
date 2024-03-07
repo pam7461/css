@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+            background-image:url(./images/img01.jpg),url(./images/img02.jpg),url(./images/img03.jpg);
+            background-repeat:no-repeat;
+            background-position:100px 0,200px 0 ,300px 0;
+            background-size:100px,100px,100px;
+        }
+        ul{
+            list-style:square;
+        }
+        ul ul{
+            list-style:decimal;
+        }
+        ul ul ul{
+            list-style:none;
+        }
+        ol{
+            padding-left:20px;
+            
+        }
+        ol li:nth-child(1){
+            list-style-image: url(./images/img01.jpg);
+        }
+        ol li:nth-child(2){
+            list-style-image: url(./images/img02.jpg);
+        }
+        ol li:nth-child(3){
+            list-style-image: url(./images/img03.jpg);
+        }
+        ol li:nth-child(4){
+            list-style-image: url(./images/img04.jpg);
+        }
+        ol li:nth-child(5){
+            list-style-image: url(./images/img05.jpg);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            1
+            <ul>
+                <li>1-1</li>
+                <li>1-2</li>
+                <li>
+                    1-3
+                    <ul>
+                        <li>1-3-1</li>
+                        <li>1-3-2</li>
+                        <li>1-3-3</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <ol>
+        <li>일</li>
+        <li>이</li>
+        <li>삼</li>
+        <li>사</li>
+        <li>오</li>
+    </ol>
+</body>
+</html>
