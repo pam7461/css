@@ -7,7 +7,8 @@
     <style>
         *{box-sizing: border-box;margin: 0;padding: 0;}
         .header{
-            padding:1em;
+            border-bottom:2px solid #b00;
+            padding:20px;
             background:white;
             text-align:center;
             text-transform:uppercase;
@@ -18,7 +19,24 @@
             right:0;
             top:0;
         }
+        .nav{     
+            opacity:0;               
+            padding:1em;
+            background:#999;
+            color:white;
 
+            position:absolute;
+            left:-20px;
+            /* left:-2000px; */
+            right:-20px;
+            /* right:3000px; */
+            top:108px;
+
+            
+        }
+        .header span:hover+.nav{
+            opacity:1;
+        }
         .sec{
             padding:2em;
             background:lightcoral;
@@ -33,8 +51,8 @@
 </head>
 <body>
     <header class="header">
-        <span>헤더</span>
-        <nav>네비</nav>
+        <span class="triger">헤더</span>
+        <nav class="nav">네비</nav>
     </header>
     <section class="sec">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum sequi fuga iure aliquam ullam, suscipit repellat magni corrupti animi in eaque distinctio quam. Nesciunt saepe vitae velit sapiente, quo itaque.
