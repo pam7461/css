@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Document</title>
+    <style>
+        *{box-sizing:border-box;margin:0;padding:0;}
+        .par-box{
+            /* 구조 */
+                /* 플렉스 컨테이너 */
+                display:flex;
+
+                /* 주축방향 */
+                flex-direction:row;
+                /* flex-direction:row-reverse; */
+                /* flex-direction:column; */
+                /* flex-direction:column-reverse; */
+
+                /* 교차축 사용유무 */
+                flex-wrap:nowrap;
+                flex-wrap:wrap;
+                flex-wrap:wrap-reverse;
+
+
+            flex-direction:column-reverse;
+            flex-wrap:wrap;
+
+            flex-direction:row;
+            flex-wrap:wrap;
+
+            flex-flow:row nowrap;
+            flex-flow:column wrap;
+            flex-flow:row-reverse wrap-reverse;
+
+            /* 박스모델 */
+            width:500px;
+            height:500px;
+            margin:100px auto;
+            border:2px solid red;
+        }
+
+        .box{
+            width:100px;
+            height:100px;
+            background:green;
+            font-size:1.5em;
+            color:#fff;
+        }
+        .box02{
+            background:blue;
+        }
+        .box03{
+            background:yellow;
+        }
+        .box04{
+            background:cyan;
+        }
+        .box05{
+            background:magenta;
+        }
+        .box06{
+            background:black;
+        }
+    </style>
+</head>
+<body>
+    <div class="par-box">
+        <div class="box box01">BOX01</div>
+        <div class="box box02">BOX02</div>
+        <div class="box box03">BOX03</div>
+        <div class="box box04">BOX04</div>
+        <div class="box box05">BOX05</div>
+        <div class="box box06">BOX06</div>
+    </div>
+</body>
+</html>
