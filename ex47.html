@@ -13,28 +13,38 @@
             width:100px;
             height:40px;
             margin-bottom:30px;
-            transition-property:margin-left;
-            transition-duration:5s;
+            /* transition-property:margin-left; */
+            /* transition-duration:5s; */
         }
         .car01{
             background:red;
-            transition-timing-function:linear;
+            /* transition-timing-function:linear; */
+            /* transition-delay:0.5s; */
+            transition:margin-left 5s linear .5s;
         }
         .car02{
             background:green;
-            transition-timing-function:ease;
+            /* transition-timing-function:ease; */
+            /* transition-delay:1s; */
+            transition:margin-left 5s ease 1s;
         }
         .car03{
             background:blue;
-            transition-timing-function:ease-in;
+            /* transition-timing-function:ease-in; */
+            /* transition-delay:1.5s; */
+            transition:margin-left 5s ease-in 1.5s;
         }
         .car04{
             background:cyan;
-            transition-timing-function:ease-in-out;
+            /* transition-timing-function:ease-in-out; */
+            /* transition-delay:2s; */
+            transition:margin-left 5s ease-in-out 2s;
         }
         .car05{
             background:magenta;
-            transition-timing-function:ease-out;
+            /* transition-timing-function:ease-out; */
+            /* transition-delay:2.5s; */
+            transition:margin-left 5s ease-out 2.5s;
         }
 
         .box:hover .car{
