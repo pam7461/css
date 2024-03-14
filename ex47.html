@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border:1px solid red;
+            padding:20px;
+        }
+        .car{
+            width:100px;
+            height:40px;
+            margin-bottom:30px;
+            transition-property:margin-left;
+            transition-duration:5s;
+        }
+        .car01{
+            background:red;
+            transition-timing-function:linear;
+        }
+        .car02{
+            background:green;
+            transition-timing-function:ease;
+        }
+        .car03{
+            background:blue;
+            transition-timing-function:ease-in;
+        }
+        .car04{
+            background:cyan;
+            transition-timing-function:ease-in-out;
+        }
+        .car05{
+            background:magenta;
+            transition-timing-function:ease-out;
+        }
+
+        .box:hover .car{
+            margin-left:500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="car car01">linear</div>
+        <div class="car car02">ease</div>
+        <div class="car car03">ease in</div>
+        <div class="car car04">ease in out</div>
+        <div class="car car05">ease out</div>
+    </div>
+</body>
+</html>
