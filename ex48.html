@@ -4,8 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .banner{
+            position:relative;
+            width:500px;
+            margin:0 auto;
+            border:1px solid black;
+            padding:10px;
+            font-weight:700;
+            color:white;
+            text-shadow:1px 1px 0 black;
+            overflow:hidden;
+        }
+        img{
+            width:100%;
+        }
+        h1{
+            position:absolute;
+            left:30px;
+            right:30px;
+            top:15px;            
+            transition:1s;
+        }
+        .banner:hover h1{            
+            
+        }
+        p{
+            position:absolute;
+            left:30px;
+            right:30px;
+            top:80px;            
+            transition:1s 1s;
+        }
+        .banner:hover p{
+
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="banner">
+        <div class="img-box"><img src="./images/img01.jpg" alt="봄"></div>
+        <h1>봄꽃</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam iusto eaque ex veniam esse quos doloremque sapiente, architecto nobis quia voluptates a assumenda quidem saepe qui vitae optio earum rem!</p>
+    </div>
 </body>
 </html>
