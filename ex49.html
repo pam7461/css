@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            overflow:hidden;
+        }
+        .box{
+            width:100px;
+            height:100px;
+            margin:20px auto;
+            border:1px solid black;
+
+            font-weight:900;
+            font-size:50px;
+            text-align:center;
+            line-height:100px;
+
+            transition:all 1s ease 0s;
+        }
+        .box01:hover{
+            width:200px;
+            height:200px;
+        }
+        .box02:hover{
+            transform:scaleX(2) scaleY(2);
+            transform:scale(2,3);
+            transform:scale(2);
+        }
+        .box03{
+            position:relative;
+            left:0;
+        }
+        .box03:hover{            
+            left:30px;
+        }
+        .box04:hover{
+            transform:translateX(30px);
+        }
+        .box05:hover{
+            transform:scale(2) translate(30px);
+        }
+        .box06:hover{
+            transform:rotate(-90deg);
+        }
+        .box07:hover{
+            transform:scaleX(1.5) scaleY(2) translateX(-200px) translateY(200px) rotate(180deg);
+        }
+        .box08:hover{
+            transform:skewX(15deg) skewY(15deg);
+            transform:skew(15deg);
+        }
+        .box09:hover{
+            transform:scale(2) translate(300px,0) rotate(180deg) skew(5deg);
+        }
+        .box10{
+            background:aquamarine;
+            transition:transform 1s ease 0s,background 3s linear 0s;
+        }
+        .box10:hover{
+            background:darkblue;
+            transform:scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <section class="wrap">
+        <div class="box box01">1</div>
+        <div class="box box02">2</div>
+        <div class="box box03">3</div>
+        <div class="box box04">4</div>
+        <div class="box box05">5</div>
+        <div class="box box06">6</div>
+        <div class="box box07">7</div>
+        <div class="box box08">8</div>
+        <div class="box box09">9</div>
+        <div class="box box10">10</div>
+    </section>
+</body>
+</html>
