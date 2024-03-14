@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing:border-box;margin:0;padding:0;}
+        header{
+            position:relative;
+            width:1800px;
+            margin:0 auto;
+            border:1px solid black;
+            padding:20px;
+            font-size:2em;
+        }
+        h1{
+            position:absolute;
+            left:50%;
+            top:50%;
+            transform:translate(-50%,-50%);            
+        }
+        
+        nav:first-of-type{
+            margin-bottom:40px;
+        }
+        ul::after{
+            content:'';
+            display:block;
+            clear:both;
+            list-style:none;
+        }
+        li:first-child{
+            float:left;
+            list-style:none;
+        }
+        li:last-child{
+            float:right;
+            list-style:none;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LOGO</h1>
+        <nav>
+            <ul>
+                <li>헤더탑왼쪽</li>
+                <li>헤더탑오른쪽</li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li>헤더버텀왼쪽</li>
+                <li>헤더버텀오른쪽</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

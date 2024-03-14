@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width:100%;
+            vertical-align:bottom;
+        }
+        .box{
+            width:500px;
+            height:500px;
+            margin:0 auto;
+            border:1px solid black;
+        }
+        .child-box{
+            position:relative;
+            left:0;
+            top:0;
+            width:100px;
+            height:100px;
+            /* margin-left:400px; */
+            /* margin-top:400px; */
+            background:red;
+            transition:
+                        margin-left 1s,
+                        margin-top 1s 1s,
+                        transform 1s 2s,
+                        top 1s 3s;
+        }
+        .box:hover .child-box{
+            margin-left:400px;
+            margin-top:400px;
+            transform:translate(-400px,0);
+            top:-400px;
+        }
+
+        .over-box{
+            width:500px;
+            margin:0 auto;
+            /* border:1px solid black; */
+            overflow:hidden;
+        }
+        .img-box{
+            transition:0.3s;
+        }
+        .over-box:hover .img-box{
+            transform:scale(1.05);
+            filter:blur(1);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="child-box"></div>
+    </div>
+
+    <div class="over-box">
+        <div class="img-box"><img src="./images/img01.jpg" alt="image"></div>
+        <div class="content-box">
+
+        </div>
+    </div>
+</body>
+</html>
