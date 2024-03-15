@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing:border-box;margin:0;padding:0;}
+        .box,.pos-re,.clearfix,.flex-con{
+            width:200px;
+            height:200px;
+            margin:10px auto;
+            border:1px solid black;
+        }
+        .child-box,.pos-abs,.f-left,.item{
+            width:100px;
+            height:100px;
+            background:lightcoral;
+        }
+
+
+        /* 박스모델스타일 */
+        .box{
+            padding:49px;
+        }
+
+        /* 포지션 스탕리 */
+        .pos-re{
+            position:relative;
+        }
+        .pos-abs{
+            position:absolute;
+            left:50%;
+            top:50%;
+            transform:translate(-50%,-50%);
+        }
+
+
+        /* 플로팅 포인트 스타일 */
+        .clearfix::after{
+            content:'';
+            display:block;;
+            clear:both;
+        }
+        .f-left{
+            float:right;
+            margin-right:49px;
+            margin-top:49px;
+        }
+
+
+        /* 플랙서블 박스 */
+        .flex-con{
+            display:flex;
+            flex-flow:row nowrap;
+            justify-content:center;
+            align-items:center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 박스모델 -->
+    <div class="box">
+        <div class="child-box"></div>
+    </div>
+
+    <!-- 포지션 -->
+    <div class="pos-re">
+        <div class="pos-abs"></div>
+    </div>
+
+    <!-- 플로팅포인트 -->
+    <div class="clearfix">
+        <div class="f-left"></div>
+    </div>
+
+    <!-- 플랙스컨테이너 -->
+    <div class="flex-con">
+        <div class="item"></div>
+    </div>
+</body>
+</html>
