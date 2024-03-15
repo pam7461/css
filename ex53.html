@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플랙스(Flex)</title>
+    <style>
+        h1{text-align:center;}
+        .flex-container{
+            width:500px;
+            height:500px;
+            margin:100px auto;
+            border:1px solid black;
+        }
+        .flex-item{
+            width:100px;
+            height:100px;
+            font-size:1.5em;
+            text-align:center;
+            line-height:100px;
+        }
+        .flex-item01{background:lightblue;}
+        .flex-item02{background:lightcoral;}
+        .flex-item03{background:lightcyan;}
+        .flex-item04{background:lightgoldenrodyellow;}
+        .flex-item05{background:lightgray;}
+        .flex-item06{background:lightgreen;}
+        .flex-item07{background:lightpink;}
+        .flex-item08{background:lightsalmon;}
+        .flex-item09{background:lightseagreen;}
+        .flex-item10{background:lightyellow;}
+
+
+
+        /* 플랙스 컨테이너 */
+        .flex-container{
+            display:flex;
+            flex-direction:row;
+            /* 교차축사용안함 */
+            flex-wrap:nowrap;
+            /* 교차축사용 */
+            flex-wrap:wrap;
+
+            display:flex;
+            flex-flow:row wrap;
+            flex-flow:column nowrap;
+            flex-flow:row nowrap;
+            flex-flow:column wrap;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>플랙스(Flex)</h1>
+    <div class="flex-container">
+        <div class="flex-item flex-item01">01</div>
+        <div class="flex-item flex-item02">02</div>
+        <div class="flex-item flex-item03">03</div>
+        <div class="flex-item flex-item04">04</div>
+        <div class="flex-item flex-item05">05</div>
+        <div class="flex-item flex-item06">06</div>
+        <div class="flex-item flex-item07">07</div>
+        <div class="flex-item flex-item08">08</div>
+        <div class="flex-item flex-item09">09</div>
+        <div class="flex-item flex-item10">10</div>
+        <div class="flex-item flex-item01">01</div>
+        <div class="flex-item flex-item02">02</div>
+        <div class="flex-item flex-item03">03</div>
+        <div class="flex-item flex-item04">04</div>
+        <div class="flex-item flex-item05">05</div>
+
+    </div>
+</body>
+</html>
