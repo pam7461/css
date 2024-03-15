@@ -5,32 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{box-sizing:border-box;margin:0;padding:0;}
         .card{
             width:300px;
-            margin:100px auto;
+            margin:0 auto;
+            position:relative;
         }
-        .front,.back{
+        .card-front,.card-back{
             height:200px;            
             border-radius:10px;
-            background-image:linear-gradient(35deg,rgba(255,0,0,0.5),rgba(0,0,255,0.5));
-            font-weight:700;
-            font-size:3em;
-            color:white;
-            text-align:center;
-            line-height:200px;
-        }
-        .back{
-            background-color:black;
-        }
-        
+            background:lightcoral;
+            backface-visibility:hidden;
 
-        
+            font-size:50px;
+            line-height:200px;
+            text-align:center;
+        }
+        .card-front{
+            position:relative;
+            z-index:100;            
+        }
+        .card-back{
+            position:absolute;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            z-index:99;
+            transform:rotateY(180deg);
+
+            background:lightgreen;
+        }
     </style>
 </head>
 <body>
     <div class="card">
-        <div class="front">앞면</div>
-        <div class="back">뒷면</div>
+        <div class="card-front">
+            CARD Front
+        </div>
+        <div class="card-back">
+            CARD Back
+        </div>
     </div>
 </body>
 </html>
