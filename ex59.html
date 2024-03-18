@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing:border-box;margin: 0;padding: 0;}
+        ul,ol,li{list-style:none;}
+
+        .header{
+            border-bottom:2px solid red;
+        }
+        .container{
+            display:flex;
+            flex-flow:row wrap;
+            justify-content:space-between;
+            align-content:space-between;
+            width:1200px;
+            height:90px;
+            margin:0 auto;
+        }
+        .tit{
+            order:2;
+            width:400px;
+            text-align:center;
+        }
+        .q-nav01{
+            order:1;
+            width:400px;
+        }
+        .q-nav02{
+            order:3;
+            width:400px;
+        }
+        .main-nav{
+            order:4;
+            width:1200px;
+        }
+        .q-nav01>ul{
+            display:flex;
+            flex-flow:row nowrap;
+            justify-content:flex-start;
+            align-items:flex-start;
+        }
+        .q-nav02>ul{
+            display:flex;
+            justify-content:flex-end;
+        }
+        .main-nav>ul{
+            display:flex;
+            flex-flow:row nowrap;
+            justify-content:space-around;
+        }
+    </style>
+</head>
+<body>    
+    <header class="header">
+        <div class="container">
+            <h1 class="tit">할리스</h1>
+            <nav class="q-nav01">
+                <ul>
+                    <li>창업설명회</li>
+                    <li>기업특판</li>
+                </ul>
+            </nav>
+            <nav class="q-nav02">
+                <ul>
+                    <li>멤버십 로그인</li>
+                    <li>멤버십 가입</li>
+                    <li>고객센터</li>
+                    <li>English</li>
+                </ul>
+            </nav>
+            <nav class="main-nav">
+                <ul>
+                    <li>메뉴</li>
+                    <li>할리스 몰</li>
+                    <li>멤버십</li>
+                    <li>할리스 뉴스</li>
+                    <li>매장</li>
+                    <li>할리스 소개</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>

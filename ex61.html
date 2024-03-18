@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .car{
+            position:relative;
+            animation:move 5s forwards;
+        }
+        .car-top{
+            width:100px;
+            height:50px;
+            margin-left:100px;
+            background:black;
+        }
+        .car-body{
+            width:320px;
+            height:80px;
+            background:black;
+        }
+        .wheel{
+            position:absolute;
+            left:40px;
+            bottom:-45px;
+            width:80px;
+            height:80px;
+            border:5px solid red;
+            border-radius:45px;
+            animation:wheel 5s;
+        }
+        .wheel02{
+            left:200px;
+        }
+
+        @keyframes move{
+            0%{margin-left:0;}
+            100%{margin-left:500px;}
+        }
+        @keyframes wheel{
+            0%{transform:rotate(0deg);}
+            100%{transform:rotate(720deg);}
+        }
+
+
+        .loading{
+            display:flex;
+            justify-content:space-between;
+            width:50px;
+            height:10px;
+            margin:100px auto;
+            padding:100px;
+            background:red;
+        }
+        .dot{
+            width:10px;
+            height:10px;
+            border-radius:5px;
+            background:#fff;
+            text-indent:-99999px;
+        }
+    </style>
+</head>
+<body>
+    <div class="car">
+        <div class="car-top"></div>
+        <div class="car-body"></div>
+        <div class="wheel wheel01">앞바퀴</div>
+        <div class="wheel wheel02">뒷바퀴</div>
+    </div>
+
+    <div class="loading">
+        <div class="dot dot01">점1</div>
+        <div class="dot dot02">점2</div>
+        <div class="dot dot03">점3</div>
+    </div>
+</body>
+</html>
