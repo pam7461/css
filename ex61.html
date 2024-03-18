@@ -57,9 +57,137 @@
             width:10px;
             height:10px;
             border-radius:5px;
-            background:#fff;
-            text-indent:-99999px;
+            background:rgba(255,255,255,0.3);
+            text-indent:-99999px;            
         }
+        .dot01{
+            animation:change-color01 2s ease-in-out infinite;
+        }
+        .dot02{
+            animation:change-color02 2s ease-in-out infinite;
+        }
+        .dot03{
+            animation:change-color03 2s ease-in-out infinite;
+        }
+
+        
+        @keyframes change-color01{
+            0%{
+                background:rgba(255,255,255,0.3);
+                transform:scale(1);
+            }
+            25%{
+                background:rgba(255,255,255,1);
+                transform:scale(1.2);
+            }
+            50%{
+                background:rgba(255,255,255,0.3);
+                transform:scale(1);
+            }
+            75%{
+                background:rgba(255,255,255,0.3);
+                transform:scale(1);
+            }
+            100%{
+                background:rgba(255,255,255,0.3);
+                transform:scale(1);
+            }
+        }
+        @keyframes change-color02{
+            0%{
+                background:rgba(255,255,255,0.3);
+                transform:scale(1);
+            }
+            25%{
+                background:rgba(255,255,255,0.3);
+                transform:scale(1);
+            }
+            50%{
+                background:rgba(255,255,255,1);
+                transform:scale(1.2);
+            }
+            75%{
+                background:rgba(255,255,255,0.3);
+                transform:scale(1);
+            }
+            100%{
+                background:rgba(255,255,255,0.3);
+                transform:scale(1);
+            }
+        }
+        @keyframes change-color03{
+            0%{
+                background:rgba(255,255,255,0.3);
+                transform:scale(1);
+            }
+            25%{
+                background:rgba(255,255,255,0.3);
+                transform:scale(1);
+            }
+            50%{
+                background:rgba(255,255,255,0.3);
+                transform:scale(1);
+            }
+            75%{
+                background:rgba(255,255,255,1);
+                transform:scale(1.2);
+            }
+            100%{
+                background:rgba(255,255,255,0.3);
+                transform:scale(1);
+            }
+        }
+
+        .loading02{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            width:500px;
+            height:500px;
+            margin:100px auto;
+            background:orange;
+        }
+        .loading02::before,.loading02::after{
+            content:'';
+            display:block;
+            width:0;
+            height:10px;
+            background:#fff;
+            animation:border-weight 3s infinite;
+        }
+        .loading02 p{
+            padding:0.5em 4em;
+            background:darkorange;
+            font-weight:700;
+            font-size:2em;
+            color:#fff;
+            text-transform:uppercase;            
+        }
+
+
+        @keyframes border-weight{
+            0%{width:0;}
+            100%{width:100%;}
+        }
+
+        @keyframes rotate360{
+            0%{transform:rotate(0deg);}
+            25%{transform:rotate(0deg);}
+            75%{transform:rotate(360deg);}
+            100%{transform:rotate(360deg);}
+        }
+        .loading03{
+            box-sizing:border-box;
+            margin:100px auto;
+            width:300px;
+            height:300px;
+            border:50px solid darkorange;
+            border-right-color:transparent;
+            border-left-color:transparent;
+            border-radius:150px;
+            animation: rotate360 2s alternate infinite;
+        }
+        
     </style>
 </head>
 <body>
@@ -75,5 +203,14 @@
         <div class="dot dot02">점2</div>
         <div class="dot dot03">점3</div>
     </div>
+
+    <div class="loading02">
+        <p>Loading...</p>
+    </div>
+
+    <div class="loading03">
+        <div class="circle"></div>
+    </div>
+
 </body>
 </html>
