@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS(Cascading Style sheet)</title>
+    <style>
+        h3{
+            color:blue;
+        }
+        p{
+            color:cyan;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS3(Cascading Style Sheet)</h1>
+    <p>조상으로 부터 스타일을 상속받아 사용할 수 있는 스타일시트</p>
+    <p>일부 스타일 프로퍼티를 제외하고 상속이 이루어진다.</p>
+    <p>상속이란 : 조상 요소로 부터 물려받는 프로퍼티</p>
+    <h2>스타일 작성방법</h2>
+    <h3 style="color:red;">1. 인라인 스타일</h3>
+    <p style="color:green;">엘리먼트(요소) 내부에서 정의된 스타일</p>
+    <p>정의된 엘리먼트에 종속된다.</p>
+    <p>스타일 중 가장 우선순위가 높다.</p>
+    <h3>2. 내부 스타일</h3>
+    <p>문서에서 "style"요소 내부에 작성된 스타일</p>
+    <p>문서에 종속된다.</p>
+    <p>인라인 스타일보다 우선순위가 낮다.</p>
+    <h3>3. 외부스타일</h3>
+    <p>독립적인 스타일시시트(.css)파일로 작성된 스타일</p>
+    <p>필요한 문서에서 사용가능</p>
+    <p>우선순위는 내부스타일과 같다.</p>
+</body>
+</html>
