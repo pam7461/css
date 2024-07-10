@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자2</title>
+    <style>
+        .set-yellow{color:yellow;}
+
+        /* 자식선택자 */
+        li>ul>li{color:blue;}
+        /* 자손선택자 */
+        li li{color:green;}
+
+        li{color:red;}
+
+        /* 순서선택자 */
+        /* li이 중에서 2번째 안에있는 li중에서 1번째 */
+        li:nth-child(2) li:nth-child(1){color:green;}
+    </style>
+</head>
+<body>
+    <h1>선택자2</h1>
+    <ul>
+        <!-- 1 -->
+        <li>
+            목록1
+            <ul>
+                <li class="set-yellow">목록1-1</li>
+                <li>목록1-2</li>
+                <li>목록1-3</li>
+            </ul>
+        </li>
+        <!-- 2 -->
+        <li>
+            목록2
+            <ul>
+                <!-- 1 -->
+                <li>목록2-1</li>
+                <!-- 2 -->
+                <li>목록2-2</li>
+                <!-- 3 -->
+                <li>목록2-3</li>
+            </ul>
+        </li>
+        <!-- 3 -->
+        <li>
+            목록3
+            <ul>
+                <li>목록3-1</li>
+                <li>목록3-2</li>
+                <li>목록3-3</li>
+            </ul>
+        </li>
+        <!-- 4 -->
+        <li>
+            목록4
+            <ul>
+                <li>목록4-1</li>
+                <li>목록4-2</li>
+                <li>목록4-3</li>
+            </ul>
+        </li>
+        <!-- 5 -->
+        <li>
+            목록5
+            <ul>
+                <li>목록5-1</li>
+                <li>목록5-2</li>
+                <li>목록5-3</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
