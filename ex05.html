@@ -5,14 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>선택자4</title>
     <style>
+        :root{
+            --pcolor:lightblue;
+            --g1color:#eeeeee;
+            --g2color:#333333;            
+        }
+        h1{
+            color:var(--pcolor);
+        }
         .btn{
             width:40px;
         }
         .box{
+            /* color:aqua; */
             height:4px;
             margin:12px 0;
             background-color:black;
         }
+
+        .par{
+            margin:100px;
+            width:40px;
+        }
+        .children{
+            height:4px;
+            margin:12px 0;
+            background-color:black;
+        }
+        .par::before,.par::after{
+            content:'';
+            display:block;
+            height:4px;
+            background-color:red;
+        }
+        input{color:green;}
+        input::placeholder{color:blue;}
+        
     </style>
 </head>
 <body>
@@ -22,5 +50,14 @@
         <div class="box"></div>
         <div class="box"></div>
     </div>
+    <div class="par">
+        <!-- ::before -->
+        <div class="children"></div>
+        <!-- ::after -->
+    </div>
+    <input type="text" placeholder="성명">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, maiores!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis officiis mollitia minus voluptates modi id maxime error alias, voluptatum repudiandae!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque nesciunt provident ipsum voluptates voluptatum ex? Accusantium illum repellat nesciunt, eveniet veritatis, repellendus ratione qui adipisci voluptates commodi, voluptas blanditiis maiores?</p>
 </body>
 </html>
