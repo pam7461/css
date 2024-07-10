@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>선택자(Selector)</title>
     <style>
+        p{color:black !important;}
         /* 아이디(id)선택자 */
         #set-blue01{color:blue;}
         #set-blue02{color:blue;}
         #set-blue03{color:blue;}
         #set-blue04{color:blue;}
         #set-blue05{color:blue;}
+        #set-blue06{color:blue;}
         /* 클래스(Class)선택자 */
         .set-green{color:green;}
         /* 타입(테그)선택자 */
@@ -20,19 +22,21 @@
 <body>
     <h1>선택자(Selector)</h1>
     <h2>1. 타입(Type) 선택자 = 태그 선택자</h2>
-    <p>요소(Element)를 구성하는 태그 네임을 이용한 선택자</p>
+    <p style="color:yellow;">요소(Element)를 구성하는 태그 네임을 이용한 선택자</p>
     <p>동일 테그네임을 사용하는 요소들을 선택한다.</p>
     <p>내외부에서 사용되는 선택자중 우선순위가 4등</p>
     <br>
     <h2 class="set-green">2. 클래스(Class) 선택자</h2>
-    <p class="set-green">요소(Element)를 구성하는 클래스(Class) 네임을 이용한 선택자</p>
+    <p class="set-green" style="color:yellow;">요소(Element)를 구성하는 클래스(Class) 네임을 이용한 선택자</p>
     <p class="set-green">동일 클래스(class) 네임을 사용하는 요소들을 선택한다.</p>
     <p class="set-green">내외부에서 사용되는 선택자중 우선순위가 3등</p>
     <br>
     <h2 id="set-blue01">3. 아이디(id) 선택자</h2>
-    <p id="set-blue02">요소(Element)를 구성하는 아이디(id) 네임을 이용한 선택자</p>
+    <p id="set-blue02" style="color:yellow;">요소(Element)를 구성하는 아이디(id) 네임을 이용한 선택자</p>
     <p id="set-blue03">동일 아이디(id) 네임을 사용하는 요소를 선택한다.</p>
     <p id="set-blue04">내외부에서 사용되는 선택자중 우선순위가 2등</p>
     <p id="set-blue05">나는 아이디선택자를 사용하지 않는다</p>
+    <br>
+    <h2 class="set-green impo impo02 set" id="set-blue06" style="color:yellow;">!important</h2>
 </body>
 </html>
