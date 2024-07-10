@@ -6,22 +6,72 @@
     <link rel="stylesheet" href="./css/reset.css">
     <title>JUST 쇼핑몰</title>
     <style>
-        .wrap{
+        .wrap{            
             width:1200px;
             margin:0 auto;
         }
         .header{            
-            height:100px;            
-
+            height:100px;
             background-color:aqua;
+        }
+        .header h1{
+            float:left;
+        }
+        .header nav{
+            float:right;
+        }
+
+        .slide{
+            position:relative;            
+            height:300px;
+            background-color:rgb(23, 134, 64);
+        }
+        .slide .art{
+            position:absolute;
+            left:0;
+            top:0;
+        }
+
+
+        .contents{            
+            height:200px;
+            background-color:rgb(102, 89, 202);
+        }
+        .contents>div{
+            float:left;
+            width:400px;
+            border:2px solid red;
+        }
+        .footer{            
+            height:100px;
+            background-color:rgb(236, 108, 164);
         }
     </style>
 </head>
 <body>
     <section class="wrap">
-        <header class="header"></header>
-        <section class="sec slide"></section>
-        <section class="sec contents"></section>
+        <header class="header">
+            <h1>로고</h1>
+            <nav>
+                네비게이션
+            </nav>
+        </header>
+        <section class="sec slide">
+            <article class="art art01">
+                <a href="#"><img src="./images/summer01.jpg" alt="summer01"></a>
+            </article>
+            <article class="art art02">
+                <a href="#"><img src="./images/summer02.jpg" alt="summer02"></a>
+            </article>
+            <article class="art art03">
+                <a href="#"><img src="./images/summer03.jpg" alt="summer03"></a>
+            </article>
+        </section>
+        <section class="sec contents">
+            <div class="c1c2">1</div>
+            <div class="c3">2</div>
+            <div class="c4">3</div>
+        </section>
         <footer class="footer"></footer>
     </section>
 </body>
