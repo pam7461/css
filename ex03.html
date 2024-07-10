@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>선택자2</title>
-    <style>
+    <style>   
+        :nth-child(3){color:aqua;}
             /* 클래스 선택자 */
-        .set-yellow{color:yellow;}
+        li.set-yellow{color:yellow;}
             /* 자식 선택자 */
         li>ul>li{color:blue;}
             /* 자손 선택자 */
@@ -18,7 +19,7 @@
     </style>
 </head>
 <body>
-    <h1>선택자2</h1>
+    <h1 class="set-yellow">선택자2</h1>
     <ul>
         <!-- 1 -->
         <li>

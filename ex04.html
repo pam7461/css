@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자3</title>
+    <style>
+        a{color:blue;}
+
+        /* 방문이력이 있는 링크 스타일 red */
+        a:visited{color:red;}
+        /* 방문이력이 없는 링크 스타일 green */
+        a:link{color:green;}
+        /* 마우스를 요소에서 누루고 있는 순간 스타일 blue */
+        a:active,h1:active{color:blue;}
+        
+        /* 마우스를 요소에 올려놓고 있는 순간 스타일 cyan */
+        a:hover,h1:hover{color:cyan;}        
+        /* 처음 요소 */
+        a:first-child{color:fuchsia;}
+        /* 마지막 요소 */
+        a:last-child{color:chocolate;}
+        /* 3번째 요소 */
+        a:nth-child(3){color:blueviolet;}
+    </style>
+</head>
+<body>
+    <h1>선택자3,가상클래스 선택자</h1>
+    <div>
+        <a href="#">클릭1</a>
+        <a href="https://www.japan.com">클릭2</a>
+        <a href="https://www.china.com">클릭3</a>
+        <a href="https://www.china.com">클릭4</a>
+        <a href="https://www.china.com">클릭5</a>
+    </div>
+</body>
+</html>
