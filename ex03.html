@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>선택자2</title>
     <style>
+            /* 클래스 선택자 */
         .set-yellow{color:yellow;}
-
-        /* 자식선택자 */
+            /* 자식 선택자 */
         li>ul>li{color:blue;}
-        /* 자손선택자 */
+            /* 자손 선택자 */
         li li{color:green;}
-
         li{color:red;}
-
-        /* 순서선택자 */
-        /* li이 중에서 2번째 안에있는 li중에서 1번째 */
+            /* 순서선택자,가상클래스선택자 */
+            /* li이 중에서 2번째 안에있는 li중에서 1번째 */
         li:nth-child(2) li:nth-child(1){color:green;}
     </style>
 </head>
