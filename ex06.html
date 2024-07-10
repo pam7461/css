@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
     <title>박스모델(box model)</title>
     <style>
-        *{margin:0;}
         p.box01{
             width:300px;
             height:300px;
@@ -35,6 +35,16 @@
             margin:0 auto;
             border:1px solid black;
             border-radius:100px;
+        }
+        p.box04,p.box05,p.box06{
+            width:300px;
+            height:300px;
+            margin:20px auto;
+            border:1px solid black;
+            padding:50px;
+        }
+        p.box06{
+            box-sizing:border-box;
         }
     </style>
 </head>
@@ -66,5 +76,24 @@
         검정색 태두리 <br>
         모퉁이는 100px만큼 둥글게 표시
     </p>
+    <h2>padding</h2>
+    <p>padding은 border 안쪽의 여백</p>
+    <p>padding은 top right bottom left</p>
+    <p class="box04">
+        300*300 <br>
+        가운데 맞춤 <br>
+        검정색 태두리 <br>
+        안쪽여백 50px
+    </p>
+    <h2>box-sizing</h2>
+    <p>box-sizing은 박스의 크기를 결정하는 프로퍼티</p>
+    <p>border-box와 content-box로 설정할 수 있다.</p>
+    <p class="box05">content-box</p>
+    <p class="box06">border-box</p>
+    <ul>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+    </ul>
 </body>
 </html>
