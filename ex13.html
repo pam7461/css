@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>Document</title>
+    <style>
+        .header,.sec,.footer{
+            width:1200px;
+            margin:0 auto;
+        }
+        .header{
+            height:100px;
+        }
+        .header h1{
+            float:left;
+            font-weight:700;
+            font-size:64px;
+            color:#d93468;
+        }
+        .header nav{
+            float:right;
+        }        
+        .slider{
+            height:300px;
+            position:relative;
+        }
+        .slider .img-box{
+            position:absolute;
+            left:0;
+            top:0;
+        }
+        .slider .img-box h2{
+            position:absolute;
+            left:16px;
+            top:150px;
+            color:#ffffff;
+        }
+        .slider .img-box p{
+            position:absolute;
+            left:16px;
+            top:200px;
+            color:#ffffff;
+        }
+        .contents{
+            height:200px;
+        }
+        .contents .art{
+            float:left;
+            width:400px;
+            height:200px;
+            border-right:1px dotted black;
+        }
+        .footer{
+            height:100px;
+        }
+        .footer h2{
+            float:left;
+            width:200px;
+            height:100px;
+            background-color:red;
+        }
+        .footer address{
+            float:left;
+            width:800px;
+            height:100px;
+            background-color:green;
+        }
+        .footer .sns{
+            float:left;
+            width:200px;
+            height:100px;
+            background-color:blue;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <section class="wrap">
+        <header class="header clearfix">
+            <h1>JUST</h1>
+            <nav>
+                <ul>
+                    <li>
+                        탑
+                        <ul>
+                            <li><a href="#">블라우스</a></li>
+                            <li><a href="#">티</a></li>
+                            <li><a href="#">셔츠</a></li>
+                            <li><a href="#">니트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        탑
+                        <ul>
+                            <li><a href="#">블라우스</a></li>
+                            <li><a href="#">티</a></li>
+                            <li><a href="#">셔츠</a></li>
+                            <li><a href="#">니트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        탑
+                        <ul>
+                            <li><a href="#">블라우스</a></li>
+                            <li><a href="#">티</a></li>
+                            <li><a href="#">셔츠</a></li>
+                            <li><a href="#">니트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        탑
+                        <ul>
+                            <li><a href="#">블라우스</a></li>
+                            <li><a href="#">티</a></li>
+                            <li><a href="#">셔츠</a></li>
+                            <li><a href="#">니트</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="sec sec01 slider">
+            <div class="img-box">
+                <img src="./images/summer01.jpg" alt="이미지1">
+                <h2>저스트 신규 회원 이벤트</h2>
+                <p>저스트 신규 회원으로 가입하면 가입기념 5,000point 적립</p>
+            </div>
+            <div class="img-box">
+                <img src="./images/summer02.jpg" alt="이미지2">
+                <h2>저스트 썸머 세일</h2>
+                <p>세일 하니까 어서어서 오세요. 정말 싸요!</p>
+            </div>
+            <div class="img-box">
+                <img src="./images/summer03.jpg" alt="이미지3">
+                <h2>올해도 돌아온 광복절 이벤트</h2>
+                <p>기미년 3월 1일 정오.. 대한독립만세.. 만만세!!!</p>
+            </div>
+        </section>
+        <section class="sec sec02 contents clearfix">
+            <article class="art art01">공지사항/갤러리</article>
+            <article class="art art02">배너</article>
+            <article class="art art03">바로가기</article>
+        </section>
+        <footer class="footer clearfix">
+            <h2>로고</h2>
+            <address>copyright</address>
+            <div class="sns">sns</div>
+        </footer>
+    </section>
+</body>
+</html>

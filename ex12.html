@@ -33,8 +33,15 @@
             list-style:none;
             margin-right:16px;
         }
-       
-       
+        .slide{position:relative;}
+        .slide h2{display:none;}
+        .slide li{
+            position:absolute;
+            left:0;
+            top:0;
+            opacity:0;
+        }
+        .slide li:last-child{opacity:1;}
       
     </style>
 </head>
@@ -74,7 +81,14 @@
             </nav>
         </div>
     </header>
-    
+    <section class="sec slide">
+        <h2>이벤트 바로가기</h2>
+        <ul>
+            <li><a href="#"><img src="./images/summer01.jpg" alt="slide01"></a></li>
+            <li><a href="#"><img src="./images/summer02.jpg" alt="slide02"></a></li>
+            <li><a href="#"><img src="./images/summer03.jpg" alt="slide03"></a></li>            
+        </ul>
+    </section>
 
 
     
