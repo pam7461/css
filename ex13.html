@@ -12,6 +12,8 @@
         }
         .header{
             height:100px;
+            position:relative;
+            z-index:100;
         }
         .header h1{
             float:left;
@@ -21,10 +23,26 @@
         }
         .header nav{
             float:right;
-        }        
+            padding:23.5px 0;
+        }
+        .header .main-nav>li{
+            float:left;   
+            width:180px;
+            padding:16px;
+            text-align:center;         
+        }
+        .header .main-nav>li:hover{
+            background-color:#333333;
+            color:#ffffff;
+        }
+        .header .sub-nav{
+            display:none;
+        }   
+
         .slider{
             height:300px;
             position:relative;
+            z-index:99;
         }
         .slider .img-box{
             position:absolute;
@@ -59,7 +77,9 @@
             float:left;
             width:200px;
             height:100px;
-            background-color:red;
+            font-weight:700;
+            font-size:64px;
+            color:#999999;
         }
         .footer address{
             float:left;
@@ -85,10 +105,10 @@
         <header class="header clearfix">
             <h1>JUST</h1>
             <nav>
-                <ul>
+                <ul class="main-nav clearfix">
                     <li>
                         탑
-                        <ul>
+                        <ul class="sub-nav">
                             <li><a href="#">블라우스</a></li>
                             <li><a href="#">티</a></li>
                             <li><a href="#">셔츠</a></li>
@@ -97,7 +117,7 @@
                     </li>
                     <li>
                         아우터
-                        <ul>
+                        <ul class="sub-nav">
                             <li><a href="#">자켓</a></li>
                             <li><a href="#">코트</a></li>
                             <li><a href="#">가디건</a></li>
@@ -106,7 +126,7 @@
                     </li>
                     <li>
                         팬츠
-                        <ul>
+                        <ul class="sub-nav">
                             <li><a href="#">청바지</a></li>
                             <li><a href="#">짧은바지</a></li>
                             <li><a href="#">긴바지</a></li>
@@ -115,7 +135,7 @@
                     </li>
                     <li>
                         악세서리
-                        <ul>
+                        <ul class="sub-nav">
                             <li><a href="#">귀고리</a></li>
                             <li><a href="#">목걸이</a></li>
                             <li><a href="#">반지</a></li>
@@ -143,12 +163,31 @@
             </div>
         </section>
         <section class="sec sec02 contents clearfix">
-            <article class="art art01">공지사항/갤러리</article>
-            <article class="art art02">배너</article>
-            <article class="art art03">바로가기</article>
+            <article class="art art01">
+                <div class="notice">
+                    <h2>공지사항</h2>
+                    <p>내용</p>
+                </div>
+                <div class="gallery">
+                    <h2>갤러리</h2>
+                    <p>내용</p>
+                </div>
+            </article>
+            <article class="art art02">
+                <div class="banner">
+                    <h2>배너</h2>
+
+                </div>
+            </article>
+            <article class="art art03">
+                <div class="quick-icon">
+                    <h2>바로가기</h2>
+
+                </div>
+            </article>
         </section>
         <footer class="footer clearfix">
-            <h2>로고</h2>
+            <h2>JUST</h2>
             <address>copyright</address>
             <div class="sns">sns</div>
         </footer>
