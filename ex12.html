@@ -12,38 +12,58 @@
         }
         .container{
             width:960px;
-            margin:0 auto;
+            margin:0 auto;            
+            position:relative;
         }
-        
+        .header h1{
+            position:absolute;
+            left:calc(50% - 58px);
+            top:0;            
+        }
+        .q-nav01{
+            float:left;
+            margin-bottom:50px;
+        }
+        .q-nav02{float:right;}
         .header h2{
             display:none;
         }
+        .header li{
+            float:left;
+            list-style:none;
+            margin-right:16px;
+        }
+       
+       
+      
     </style>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <h1>HOLLYS</h1>
-            <div class="q-nav01">
-                <h2>빠른이동1</h2>
-                <ul>
-                    <li><a href="#">커피차 안내</a></li>
-                    <li><a href="#">창업설명회</a></li>
-                    <li><a href="#">기업특판</a></li>
-                </ul>
-            </div>
-            <div class="q-nav02">
-                <h2>빠른이동2</h2>
-                <ul>
-                    <li><a href="#">멤버십 로그인</a></li>
-                    <li><a href="#">멤버십 가입</a></li>
-                    <li><a href="#">고객센터</a></li>
-                    <li><a href="#">English</a></li>
-                </ul>                
+            <div class="clearfix">
+                <div class="q-nav01">
+                    <h2>빠른이동1</h2>
+                    <ul class="clearfix">
+                        <li><a href="#">커피차 안내</a></li>
+                        <li><a href="#">창업설명회</a></li>
+                        <li><a href="#">기업특판</a></li>
+                    </ul>
+                </div>
+                <div class="q-nav02">
+                    <h2>빠른이동2</h2>
+                    <ul class="clearfix">
+                        <li><a href="#">멤버십 로그인</a></li>
+                        <li><a href="#">멤버십 가입</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>                
+                </div>
             </div>
             <nav class="nav">
                 <h2>메인 내비게이션</h2>
-                <ul>
+                <ul class="clearfix">
                     <li><a href="#">menu1</a></li>
                     <li><a href="#">menu2</a></li>
                     <li><a href="#">menu3</a></li>
@@ -54,6 +74,7 @@
             </nav>
         </div>
     </header>
+    
 
 
     
