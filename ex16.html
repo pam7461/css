@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpot" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>배경(background)</title>
+    <style>
+        h1{
+            padding:30px;
+            text-align:center;
+        }
+        .colors li:first-child{
+            background-color:#ff0000;
+        }
+        .colors li:last-child{
+            background-color:rgba(255,0,0,0.1)
+        }
+        .box01{
+            width:200px;
+            height:200px;
+            margin:0 auto;
+            border:20px solid rgba(255,0,0,0.1);
+            padding:20px;
+            /* 배경색상 */
+            background-color:rgba(255,0,0,0.1);
+            /* 배경색상 영역 */
+            background-clip:border-box;
+            /* 축약형 */
+            background:rgba(0,255,0,0.1) content-box;
+        }
+        .box02{
+            width:2000px;
+            height:1000px;
+            margin:20px auto;
+            border:1px solid black;
+            background-image:url(./images/summer01.jpg);
+            background-repeat:no-repeat;            
+            background-size:contain;
+            /* 이미지를 확대/축소해서 박스를 체움 */
+            background-size:cover;
+            background-position-x:center;
+            background-position-y:center;
+
+            /* 축약형 */
+            background:#ff0000 url(./images/summer01.jpg) no-repeat center;
+            /* ***단 축약형 백그라운드 표현 size는 표현 못함 */
+            background-size:contain;
+        }
+    </style>
+</head>
+<body>
+    <h1>배경(background)</h1>
+    <h2>색상 표현 방법</h2>
+    <ul class="colors">
+        <li>색상명</li>
+        <li>색상코드</li>
+    </ul>
+    <h2>background</h2>
+    <div class="box box01">박스1</div>
+    <div class="box box02">박스2</div>
+</body>
+</html>
