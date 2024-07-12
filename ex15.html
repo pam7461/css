@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>택스트 맞춤, 줄바꿈, 말 줄임</title>
+    <style>
+        .box{
+            width:100px;
+            height:100px;
+            margin:20px auto;            
+        }
+        .box-a{            
+            background-color:red;
+            font-size:20px;
+            /* 가로 */
+            text-align:center;
+            /* 세로 = 박스높이로 줄간격을 설정 */
+            line-height:100px;
+        }
+        .box-b{
+            background-color:green;
+            white-space:nowrap;
+        }
+        .box-c{
+            background-color:blue;
+            /* 말줄임 3총사 */
+            white-space:nowrap;
+            text-overflow:ellipsis;
+            overflow:hidden;
+        }
+        ul,li{
+            padding-left:30px;
+            list-style:url(./images/summer04.jpg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box box-a">대한민국</div>
+    <div class="box box-b">Republic Of Korea</div>
+    <div class="box box-c">Korea Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio eligendi officiis molestias debitis eveniet suscipit inventore itaque veritatis hic? Quod, veritatis exercitationem amet voluptatem recusandae tempore nobis nostrum laboriosam ducimus dolor explicabo, debitis est ipsa fugit porro maiores maxime ab doloribus eos deserunt? Numquam alias distinctio, magnam aut explicabo sint beatae, a enim officiis ea eaque laborum facere perspiciatis tenetur possimus. Culpa provident exercitationem aspernatur eius laudantium deleniti suscipit! Deleniti, aperiam praesentium? At maxime dignissimos officia laudantium, possimus eos adipisci veniam explicabo, sequi rem quas nostrum natus voluptatibus ipsum. Dolore magnam neque est illum aliquid ipsum officia reiciendis, minima vero, repellat nisi voluptate. Nesciunt id quibusdam illum beatae libero suscipit ad ipsum ullam at, quam nostrum vel doloribus eligendi officia consectetur amet eius delectus magnam corrupti pariatur doloremque quo. Suscipit, eveniet qui delectus ipsum inventore facilis blanditiis nulla ducimus rem illo doloribus quis error accusamus, laudantium possimus. Maiores, repudiandae placeat? Delectus sapiente perspiciatis cumque ipsa quos dolore eius, voluptatum distinctio amet et eaque alias rerum quas velit odio voluptates dicta odit molestiae placeat corporis? Consequuntur temporibus delectus accusantium repellendus aliquid, autem in inventore recusandae? Commodi amet excepturi eum natus aut tempore, laudantium consectetur! Dolor hic maiores sequi, voluptatum vitae quod!</div>
+    <ul>
+        <li>대한민국</li>
+        <li>중화인민공화국</li>
+        <li>일본국</li>
+        <li>미국</li>
+        <li>영국</li>
+    </ul>
+</body>
+</html>
