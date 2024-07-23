@@ -34,10 +34,29 @@
             transform:scale(200%,100%);
             transform:translate(0,200px);
         }
+        .container{
+            width:500px;
+            height:500px;
+            margin:400px auto;
+            border:2px solid black;
+            position:relative;
+        }
+        .container div{
+            width:100px;
+            height:100px;
+            background:lightcoral;
+            position:absolute;
+            left:50%;
+            bottom:0;
+            transform:translate(-50%,0);
+        }
     </style>
 </head>
 <body>
     <div class="flag">기준</div>
     <div class="box"></div>
+    <div class="container">
+        <div></div>
+    </div>
 </body>
 </html>

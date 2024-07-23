@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform02</title>
+    <style>
+        .box{
+            width:100px;
+            height:100px;
+            background:red;
+            margin:0 auto;
+            transition:transform 1s;;
+        }
+        .box:hover{
+            transform:rotate(-360deg) scale(2);
+        }
+
+        .box02{
+            width:300px;
+            height:300px;
+            margin:200px auto;
+            background:green;
+            transition:transform 0.3s;
+        }
+        .box02:hover{
+            transform:skewX(-45deg);
+            transform:skewY(-45deg);
+            transform:skew(45deg,-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box02"></div>
+</body>
+</html>
