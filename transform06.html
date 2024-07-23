@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>transform06</title>
     <style>
+        .box{
+            perspective:200px;
+        }
         .box div{
             width:200px;
             height:200px;
@@ -13,6 +16,7 @@
             text-align:center;
             line-height:200px;
             transition:transform 1s;
+            backface-visibility:hidden;
         }
         .box:hover div{
             transform:rotateY(180deg);
