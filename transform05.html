@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform05</title>
+    <style>
+        .big-circle{
+            width:600px;
+            height:600px;
+            margin:0 auto;
+            border:10px solid black;
+            border-radius:300px;
+            position:relative;
+        }
+        .big-circle div{
+            width:2px;
+            height:250px;
+            background:red;
+            position:absolute;
+            left:50%;
+            bottom:50%;
+            z-index:100;
+            transform:translate(-50%,0);
+        }
+        .big-circle .hour{
+            width:10px;
+            height:150px;
+            background:black;
+            z-index:200;
+            transform:translate(-50%,0) rotate(95deg);
+            transform-origin:50% 100%;
+        }
+        .big-circle .minu{
+            width:6px;
+            height:200px;
+            background:black;
+            z-index:150;
+            transform:translate(-50%,0) rotate(60deg);
+            transform-origin:50% 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="big-circle">
+        <div class="hour"></div>
+        <div class="minu"></div>
+        <div class="seco"></div>
+    </div>
+</body>
+</html>

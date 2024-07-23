@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform06</title>
+    <style>
+        .box div{
+            width:200px;
+            height:200px;
+            margin:100px auto;
+            border:1px solid black;
+            text-align:center;
+            line-height:200px;
+            transition:transform 1s;
+        }
+        .box:hover div{
+            transform:rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>안녕하세요</div>
+    </div>
+</body>
+</html>
