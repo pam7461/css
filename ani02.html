@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ani02</title>
+    <style>
+        .box{
+            width:100px;
+            height:100px;
+            background:#f00;
+            position:relative;
+            left:0px;
+            top:0px;
+            /*animation 필수 */
+            animation-name:ani;
+            animation-duration:4s;
+            /*animation 옵션 */
+            animation-timing-function:ease;
+            animation-delay:2s;
+            animation-iteration-count:infinite;
+            animation-direction:reverse;
+        }
+
+        @keyframes ani{
+            0%{background:#f00;left:0px;top:0px;}
+            25%{background:#0f0;left:500px;top:0px;}
+            50%{background:#00f;left:500px;top:500px;}
+            75%{background:#0ff;left:0px;top:500px;}
+            100%{background:#f00;left:0px;top:0px;}
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation</h1>
+    <p>아래의 사각형은 10초의 시간동안 상하좌우의 좌표대로 이동하고 색상이 변경됩니다. 전체 키프레임의 갯수는 5개입니다.</p>
+    <div class="box"></div>
+</body>
+</html>

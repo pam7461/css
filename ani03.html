@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes ani {
+            0%{left:0px;}
+            100%{left:500px;}
+        }
+
+        .box{
+            width:100px;
+            height:100px;
+            background:red;
+            position:relative;
+            left:0;
+            animation-name:ani;
+            animation-duration:2s;
+            animation-timing-function:ease;
+            animation-delay:0s;
+            animation-iteration-count:1;
+            animation-direction:normal;
+            animation-fill-mode:backwards;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
