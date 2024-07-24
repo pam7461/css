@@ -1,0 +1,25 @@
+   할리스 만들거야
+     Layout
+       1. float = 부동형
+       2. clear = 부동형 해제
+       3. position = 요소를 기준으로 좌표설정
+       4. display = 요소의 배치기준
+
+     디테일 스타일
+       0. @font-face
+       1. 글꼴(font)
+          1.1 font-family
+          1.2 font-weight
+          1.3 font-size
+          1.4 font-style
+       2. 택스트
+          2.1 color
+       3. 문단
+       4. 목록
+       5. 박스
+
+
+
+
+
+   

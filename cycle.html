@@ -11,12 +11,21 @@
         }
         @keyframes rotate{
             0%{transform:rotate(0deg)}
-            0%{transform:rotate(360deg)}
+            100%{transform:rotate(360deg)}
+        }
+       
+        .wrapper{
+            overflow:hidden;
         }
 
         .cycle{
             padding:200px;
             position:relative;
+            left:-1000px;
+            animation: move 5s linear 1s infinite;
+        }
+        .circle{
+            animation: rotate 0.83s linear 1s infinite;
         }
         .circle01{
             position:absolute;
@@ -32,15 +41,19 @@
             position:absolute;
             left: 290px;
             top: 310px;
+            animation: rotate 2s linear 1s infinite;
         }
+        .banner img{width:100%;}
     </style>
 </head>
 <body>
-    <div class="cycle">
-        <div class="img-box frame"><img src="./images/frame.png" alt="frame"></div>
-        <div class="img-box circle circle01"><img src="./images/circle.png" alt="circle"></div>
-        <div class="img-box circle circle02"><img src="./images/circle.png" alt="circle"></div>
-        <div class="img-box pedal"><img src="./images/pedal.png" alt="pedal"></div>
+    <div class="wrapper">
+        <div class="cycle">
+            <div class="img-box frame"><img src="./images/frame.png" alt="frame"></div>
+            <div class="img-box circle circle01"><img src="./images/circle.png" alt="circle"></div>
+            <div class="img-box circle circle02"><img src="./images/circle.png" alt="circle"></div>
+            <div class="img-box pedal"><img src="./images/pedal.png" alt="pedal"></div>
+        </div>
     </div>
 </body>
 </html>
