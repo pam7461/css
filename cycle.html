@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자전거 여행</title>
+    <style>
+        @keyframes move{
+            0%{transform:translate(0,0)}
+            100%{transform:translate(3000px,0)}
+        }
+        @keyframes rotate{
+            0%{transform:rotate(0deg)}
+            0%{transform:rotate(360deg)}
+        }
+
+        .cycle{
+            padding:200px;
+            position:relative;
+        }
+        .circle01{
+            position:absolute;
+            left: 134px;
+            top: 253px;
+        }
+        .circle02{
+            position:absolute;
+            left:0px;
+            top:0px;
+        }
+        .pedal{
+            position:absolute;
+            left:0px;
+            top:0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cycle">
+        <div class="img-box frame"><img src="./images/frame.png" alt="frame"></div>
+        <div class="img-box circle circle01"><img src="./images/circle.png" alt="circle"></div>
+        <div class="img-box circle circle02"><img src="./images/circle.png" alt="circle"></div>
+        <div class="img-box pedal"><img src="./images/pedal.png" alt="pedal"></div>
+    </div>
+</body>
+</html>
