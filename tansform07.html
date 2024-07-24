@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform06</title>
+    <style>
+        .card{
+            height:350px;
+            perspective:400px;
+            position:relative;
+        }
+        .front{
+            width:500px;
+            height:350px;
+            background:red;
+            position:absolute;
+            left:50%;
+            top:0;
+            transform:translate(-50%,0);
+            transition:transform 0.3s;
+            backface-visibility:hidden;
+        }
+        .card:hover .front{
+            transform:translate(-50%,0) rotateY(180deg);
+        }
+        .back{
+            width:500px;
+            height:350px;
+            background:green;
+            position:absolute;
+            left:50%;
+            top:0;
+            transform:translate(-50%,0) rotateY(180deg);
+            transition:transform 0.3s;
+            backface-visibility:hidden;
+        }
+        .card:hover .back{
+            transform:translate(-50%,0) rotateY(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box-pers">
+        <div class="card">
+            <div class="box front">앞면</div>
+            <div class="box back">뒷면</div>
+        </div>
+    </div>
+</body>
+</html>
